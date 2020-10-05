@@ -1,0 +1,34 @@
+kernel/fs/configfs/configfs.ko:
+kernel/crypto/seqiv.ko:
+kernel/crypto/gf128mul.ko:
+kernel/crypto/ctr.ko:
+kernel/crypto/gcm.ko:
+kernel/crypto/ccm.ko:
+kernel/crypto/ghash-generic.ko: kernel/crypto/gf128mul.ko
+kernel/drivers/char/tpm/tpm.ko:
+kernel/drivers/char/tpm/tpm_tis_core.ko: kernel/drivers/char/tpm/tpm.ko
+kernel/drivers/char/tpm/tpm_tis_i2c.ko: kernel/drivers/char/tpm/tpm_tis_core.ko kernel/drivers/char/tpm/tpm.ko
+kernel/drivers/usb/gadget/function/usb_f_ss_lb.ko: kernel/drivers/usb/gadget/libcomposite.ko kernel/fs/configfs/configfs.ko
+kernel/drivers/usb/gadget/function/u_ether.ko:
+kernel/drivers/usb/gadget/function/usb_f_ncm.ko: kernel/drivers/usb/gadget/function/u_ether.ko kernel/drivers/usb/gadget/libcomposite.ko kernel/fs/configfs/configfs.ko
+kernel/drivers/usb/gadget/function/usb_f_ecm.ko: kernel/drivers/usb/gadget/function/u_ether.ko kernel/drivers/usb/gadget/libcomposite.ko kernel/fs/configfs/configfs.ko
+kernel/drivers/usb/gadget/function/usb_f_ecm_subset.ko: kernel/drivers/usb/gadget/function/u_ether.ko kernel/drivers/usb/gadget/libcomposite.ko kernel/fs/configfs/configfs.ko
+kernel/drivers/usb/gadget/function/usb_f_rndis.ko: kernel/drivers/usb/gadget/function/u_ether.ko kernel/drivers/usb/gadget/libcomposite.ko kernel/fs/configfs/configfs.ko
+kernel/drivers/usb/gadget/function/usb_f_mass_storage.ko: kernel/drivers/usb/gadget/libcomposite.ko kernel/fs/configfs/configfs.ko
+kernel/drivers/usb/gadget/legacy/g_zero.ko: kernel/drivers/usb/gadget/libcomposite.ko kernel/fs/configfs/configfs.ko
+kernel/drivers/usb/gadget/legacy/g_ether.ko: kernel/drivers/usb/gadget/function/usb_f_rndis.ko kernel/drivers/usb/gadget/function/u_ether.ko kernel/drivers/usb/gadget/libcomposite.ko kernel/fs/configfs/configfs.ko
+kernel/drivers/usb/gadget/legacy/gadgetfs.ko:
+kernel/drivers/usb/gadget/legacy/g_mass_storage.ko: kernel/drivers/usb/gadget/function/usb_f_mass_storage.ko kernel/drivers/usb/gadget/libcomposite.ko kernel/fs/configfs/configfs.ko
+kernel/drivers/usb/gadget/legacy/g_ncm.ko: kernel/drivers/usb/gadget/function/u_ether.ko kernel/drivers/usb/gadget/libcomposite.ko kernel/fs/configfs/configfs.ko
+kernel/drivers/usb/gadget/libcomposite.ko: kernel/fs/configfs/configfs.ko
+kernel/drivers/media/usb/gspca/gspca_main.ko:
+kernel/net/802/p8022.ko: kernel/net/llc/llc.ko
+kernel/net/802/psnap.ko: kernel/net/llc/llc.ko
+kernel/net/802/stp.ko: kernel/net/llc/llc.ko
+kernel/net/ipv4/ipip.ko:
+kernel/net/8021q/8021q.ko:
+kernel/net/wireless/cfg80211.ko:
+kernel/net/llc/llc.ko:
+kernel/net/bridge/bridge.ko: kernel/net/802/stp.ko kernel/net/llc/llc.ko
+kernel/net/mac80211/mac80211.ko: kernel/lib/crypto/libarc4.ko kernel/net/wireless/cfg80211.ko
+kernel/lib/crypto/libarc4.ko:
