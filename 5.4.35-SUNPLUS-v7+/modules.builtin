@@ -2,6 +2,7 @@ kernel/kernel/configs.ko
 kernel/fs/binfmt_misc.ko
 kernel/fs/binfmt_script.ko
 kernel/fs/mbcache.ko
+kernel/fs/autofs/autofs4.ko
 kernel/fs/exportfs/exportfs.ko
 kernel/fs/ext2/ext2.ko
 kernel/fs/ext4/ext4.ko
@@ -12,6 +13,7 @@ kernel/fs/lockd/lockd.ko
 kernel/fs/nfs/nfs.ko
 kernel/fs/nfs/nfsv2.ko
 kernel/fs/nfs/nfsv3.ko
+kernel/fs/nfs/nfsv4.ko
 kernel/fs/nfs_common/grace.ko
 kernel/fs/nls/nls_base.ko
 kernel/fs/nls/nls_cp437.ko
@@ -82,6 +84,7 @@ kernel/drivers/media/common/videobuf2/videobuf2-dma-contig.ko
 kernel/drivers/media/platform/sunplus/display/sp7021/display_sp7021b.ko
 kernel/drivers/media/platform/sunplus/hdmitx/sp_hdmitx.ko
 kernel/drivers/media/platform/sunplus/mipicsi/sp-mipi.ko
+kernel/drivers/media/platform/sunplus/video/ov5647.ko
 kernel/drivers/media/usb/uvc/uvcvideo.ko
 kernel/drivers/media/v4l2-core/videodev.ko
 kernel/drivers/media/v4l2-core/v4l2-dv-timings.ko
@@ -105,6 +108,7 @@ kernel/drivers/pwm/pwm-sunplus.ko
 kernel/drivers/scsi/scsi_mod.ko
 kernel/drivers/scsi/sd_mod.ko
 kernel/drivers/scsi/sg.ko
+kernel/drivers/spi/spidev.ko
 kernel/drivers/spi/spi-sunplus-sp7021.ko
 kernel/drivers/spi/spi-slave-system-control.ko
 kernel/drivers/staging/exfat/exfat.ko
@@ -150,6 +154,7 @@ kernel/net/netlink/netlink_diag.ko
 kernel/net/packet/af_packet.ko
 kernel/net/packet/af_packet_diag.ko
 kernel/net/sunrpc/sunrpc.ko
+kernel/net/sunrpc/auth_gss/auth_rpcgss.ko
 kernel/net/unix/unix.ko
 kernel/lib/bitrev.ko
 kernel/lib/crc-ccitt.ko
