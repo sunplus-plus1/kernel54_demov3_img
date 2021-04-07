@@ -83,7 +83,7 @@ kernel/drivers/media/common/videobuf2/videobuf2-vmalloc.ko
 kernel/drivers/media/common/videobuf2/videobuf2-dma-contig.ko
 kernel/drivers/media/platform/sunplus/display/sp7021/display_sp7021b.ko
 kernel/drivers/media/platform/sunplus/hdmitx/sp_hdmitx.ko
-kernel/drivers/media/platform/sunplus/mipicsi/sp-mipi.ko
+kernel/drivers/media/platform/sunplus/mipicsi/sp-mipi-sp7021.ko
 kernel/drivers/media/platform/sunplus/video/ov5647.ko
 kernel/drivers/media/usb/uvc/uvcvideo.ko
 kernel/drivers/media/v4l2-core/videodev.ko
